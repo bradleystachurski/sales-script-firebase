@@ -6,6 +6,8 @@ import Dashboard from './protected/Dashboard'
 import { firebaseAuth, adminEmail } from '../config/constants'
 
 import Nav from './layout/Nav'
+import GatekeeperMain from './protected/gatekeeper/GatekeeperMain'
+import Gatekeeper1a from './protected/gatekeeper/Gatekeeper1a'
 
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import injectTapEventPlugin from 'react-tap-event-plugin'
@@ -85,6 +87,8 @@ export default class App extends Component {
                 <Route exact path="/" component={Home} />
                 <PublicRoute authed={this.state.authed} path="/login" component={Login}></PublicRoute>
                 <PrivateRoute authed={this.state.authed} path="/dashboard" component={Dashboard}></PrivateRoute>
+                <PrivateRoute exact authed={this.state.authed} path="/gatekeeper/main" component={GatekeeperMain}></PrivateRoute>
+                <PrivateRoute exact authed={this.state.authed} path="/gatekeeper/1a" component={Gatekeeper1a}></PrivateRoute>
                 <Route render={() => <h3>No Match</h3>} />
               </Switch>
             </div>

@@ -50,3 +50,7 @@ ul>li {
   align-items: center;
   flex-direction: column;
 }
+
+.script-container {
+  text-align: center;
+}
