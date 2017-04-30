@@ -14,14 +14,13 @@ class Dashboard extends Component {
             >
           </ListItem>
           <ListItem
-            primaryText="Script 2: Qualifying Call with Decision Maker - Adwords account
-"
+            primaryText="Script 2: Qualifying Call with Decision Maker - Adwords account"
             containerElement={<Link to="/script2/main" />}
             >
           </ListItem>
           <ListItem
-            primaryText="Follow up Call (setting up Adwords Audit)"
-            containerElement={<Link to="/followup/main" />}
+            primaryText="Script 3: Qualifying Call with Decision Maker - No Adwords Account"
+            containerElement={<Link to="/script3/main" />}
             >
           </ListItem>
         </List>

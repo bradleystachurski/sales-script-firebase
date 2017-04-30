@@ -37,6 +37,23 @@ import ScriptTwo2ab from './protected/script2/ScriptTwo2ab'
 import ScriptTwo2ai from './protected/script2/ScriptTwo2ai'
 import ScriptTwo2b from './protected/script2/ScriptTwo2b'
 
+import ScriptThreeMain from './protected/script3/ScriptThreeMain'
+import ScriptThree1a from './protected/script3/ScriptThree1a'
+import ScriptThree1ai from './protected/script3/ScriptThree1ai'
+import ScriptThree1aii from './protected/script3/ScriptThree1aii'
+import ScriptThree1b from './protected/script3/ScriptThree1b'
+import ScriptThree1bi from './protected/script3/ScriptThree1bi'
+import ScriptThree2a from './protected/script3/ScriptThree2a'
+import ScriptThree2ai from './protected/script3/ScriptThree2ai'
+import ScriptThree2aib from './protected/script3/ScriptThree2aib'
+import ScriptThree2aii from './protected/script3/ScriptThree2aii'
+import ScriptThree2aiib from './protected/script3/ScriptThree2aiib'
+import ScriptThree2aiic from './protected/script3/ScriptThree2aiic'
+import ScriptThree3a from './protected/script3/ScriptThree3a'
+import ScriptThree3ab from './protected/script3/ScriptThree3ab'
+import ScriptThree3b from './protected/script3/ScriptThree3b'
+import ScriptThree3bb from './protected/script3/ScriptThree3bb'
+
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import injectTapEventPlugin from 'react-tap-event-plugin'
 
@@ -146,6 +163,22 @@ export default class App extends Component {
                 <PrivateRoute exact authed={this.state.authed} path="/script2/2ab" component={ScriptTwo2ab}></PrivateRoute>
                 <PrivateRoute exact authed={this.state.authed} path="/script2/2ai" component={ScriptTwo2ai}></PrivateRoute>
                 <PrivateRoute exact authed={this.state.authed} path="/script2/2b" component={ScriptTwo2b}></PrivateRoute>
+                <PrivateRoute exact authed={this.state.authed} path="/script3/main" component={ScriptThreeMain}></PrivateRoute>
+                <PrivateRoute exact authed={this.state.authed} path="/script3/1a" component={ScriptThree1a}></PrivateRoute>
+                <PrivateRoute exact authed={this.state.authed} path="/script3/1ai" component={ScriptThree1ai}></PrivateRoute>
+                <PrivateRoute exact authed={this.state.authed} path="/script3/1aii" component={ScriptThree1aii}></PrivateRoute>
+                <PrivateRoute exact authed={this.state.authed} path="/script3/1b" component={ScriptThree1b}></PrivateRoute>
+                <PrivateRoute exact authed={this.state.authed} path="/script3/1bi" component={ScriptThree1bi}></PrivateRoute>
+                <PrivateRoute exact authed={this.state.authed} path="/script3/2a" component={ScriptThree2a}></PrivateRoute>
+                <PrivateRoute exact authed={this.state.authed} path="/script3/2ai" component={ScriptThree2ai}></PrivateRoute>
+                <PrivateRoute exact authed={this.state.authed} path="/script3/2aib" component={ScriptThree2aib}></PrivateRoute>
+                <PrivateRoute exact authed={this.state.authed} path="/script3/2aii" component={ScriptThree2aii}></PrivateRoute>
+                <PrivateRoute exact authed={this.state.authed} path="/script3/2aiib" component={ScriptThree2aiib}></PrivateRoute>
+                <PrivateRoute exact authed={this.state.authed} path="/script3/2aiic" component={ScriptThree2aiic}></PrivateRoute>
+                <PrivateRoute exact authed={this.state.authed} path="/script3/3a" component={ScriptThree3a}></PrivateRoute>
+                <PrivateRoute exact authed={this.state.authed} path="/script3/3ab" component={ScriptThree3ab}></PrivateRoute>
+                <PrivateRoute exact authed={this.state.authed} path="/script3/3b" component={ScriptThree3b}></PrivateRoute>
+                <PrivateRoute exact authed={this.state.authed} path="/script3/3bb" component={ScriptThree3bb}></PrivateRoute>
                 <Route render={() => <h3>No Match</h3>} />
               </Switch>
             </div>
