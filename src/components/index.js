@@ -8,6 +8,12 @@ import { firebaseAuth, adminEmail } from '../config/constants'
 import Nav from './layout/Nav'
 import GatekeeperMain from './protected/gatekeeper/GatekeeperMain'
 import Gatekeeper1a from './protected/gatekeeper/Gatekeeper1a'
+import Gatekeeper1ai from './protected/gatekeeper/Gatekeeper1ai'
+import Gatekeeper1b from './protected/gatekeeper/Gatekeeper1b'
+import Gatekeeper1bi from './protected/gatekeeper/Gatekeeper1bi'
+import Gatekeeper1bii from './protected/gatekeeper/Gatekeeper1bii'
+import Gatekeeper1c from './protected/gatekeeper/Gatekeeper1c'
+import Gatekeeper1ci from './protected/gatekeeper/Gatekeeper1ci'
 
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import injectTapEventPlugin from 'react-tap-event-plugin'
@@ -89,6 +95,12 @@ export default class App extends Component {
                 <PrivateRoute authed={this.state.authed} path="/dashboard" component={Dashboard}></PrivateRoute>
                 <PrivateRoute exact authed={this.state.authed} path="/gatekeeper/main" component={GatekeeperMain}></PrivateRoute>
                 <PrivateRoute exact authed={this.state.authed} path="/gatekeeper/1a" component={Gatekeeper1a}></PrivateRoute>
+                <PrivateRoute exact authed={this.state.authed} path="/gatekeeper/1ai" component={Gatekeeper1ai}></PrivateRoute>
+                <PrivateRoute exact authed={this.state.authed} path="/gatekeeper/1b" component={Gatekeeper1b}></PrivateRoute>
+                <PrivateRoute exact authed={this.state.authed} path="/gatekeeper/1bi" component={Gatekeeper1bi}></PrivateRoute>
+                <PrivateRoute exact authed={this.state.authed} path="/gatekeeper/1bii" component={Gatekeeper1bii}></PrivateRoute>
+                <PrivateRoute exact authed={this.state.authed} path="/gatekeeper/1c" component={Gatekeeper1c}></PrivateRoute>
+                <PrivateRoute exact authed={this.state.authed} path="/gatekeeper/1ci" component={Gatekeeper1ci}></PrivateRoute>
                 <Route render={() => <h3>No Match</h3>} />
               </Switch>
             </div>
