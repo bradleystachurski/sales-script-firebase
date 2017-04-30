@@ -1,38 +1,65 @@
 import React, { Component } from 'react'
 import { login, resetPassword } from '../helpers/auth'
-
-function setErrorMsg(error) {
-  return {
-    loginMessage: error
-  }
-}
+import TextField from 'material-ui/TextField'
+import RaisedButton from 'material-ui/RaisedButton'
 
 export default class Login extends Component {
-  state = { loginMessage: null }
+  constructor(props) {
+    super(props)
+    this.state = {
+      loginMessage: null,
+      email: '',
+      password: ''
+    }
+  }
+
   handleSubmit = (e) => {
-    e.preventDefault()
-    login(this.email.value, this.pw.value)
+    e.preventDefault();
+    login(this.state.email, this.state.password)
       .catch((error) => {
-          this.setState(setErrorMsg('Invalid username/password.'))
+        this.setState({
+          loginMessage: error.message
         })
+      })
   }
-  resetPassword = () => {
-    resetPassword(this.email.value)
-      .then(() => this.setState(setErrorMsg(`Password reset email sent to ${this.email.value}.`)))
-      .catch((error) => this.setState(setErrorMsg(`Email address not found.`)))
+
+  handleKeyPressTarget(target) {
+    if(target.charCode==13) {
+      this.handleSubmit(target)
+    }
   }
-  render () {
+
+  render() {
     return (
-      <div className="col-sm-6 col-sm-offset-3">
-        <h1> Login </h1>
-        <form onSubmit={this.handleSubmit}>
+      <div className="login-form">
+        <h1>Login</h1>
+
+        <form className="form-container" onSubmit={this.handleSubmit}>
           <div className="form-group">
-            <label>Email</label>
-            <input className="form-control" ref={(email) => this.email = email} placeholder="Email"/>
+            <TextField
+              hintText="Email"
+              floatingLabelText="Email"
+              onChange={(event, newValue) =>
+                this.setState({
+                  email: newValue
+                })
+              }
+              onKeyPress={this.handleKeyPressTarget.bind(this)}
+              /><br/>
           </div>
+
           <div className="form-group">
-            <label>Password</label>
-            <input type="password" className="form-control" placeholder="Password" ref={(pw) => this.pw = pw} />
+            <TextField
+              hintText="Password"
+              floatingLabelText="Password"
+              type="password"
+              onChange={(event, newValue) =>
+                this.setState({
+                  password: newValue
+                })
+              }
+              onKeyPress={this.handleKeyPressTarget.bind(this)}
+              />
           </div>
           {
             this.state.loginMessage &&
@@ -42,9 +69,13 @@ export default class Login extends Component {
               &nbsp;{this.state.loginMessage} <a href="#" onClick={this.resetPassword} className="alert-link">Forgot Password?</a>
             </div>
           }
-          <button type="submit" className="btn btn-primary">Login</button>
+          <RaisedButton label="Submit" style={style} onClick={(event) => this.handleSubmit(event)} />
         </form>
       </div>
     )
   }
+}
+
+const style = {
+  margin: 15
 }
