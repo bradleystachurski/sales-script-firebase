@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import { List, ListItem } from 'material-ui/List'
 
-class Gatekeeper1b extends Component {
+class ScriptOne1b extends Component {
   render() {
     return (
       <div className="script-container">
@@ -25,7 +25,7 @@ class Gatekeeper1b extends Component {
           />
           <ListItem
             primaryText="He says he doesn't know you"
-            containerElement={<Link to="/gatekeeper/1bi" />}
+            containerElement={<Link to="/script1/1bi" />}
           />
         </List>
       </div>
@@ -33,4 +33,4 @@ class Gatekeeper1b extends Component {
   }
 }
 
-export default Gatekeeper1b
+export default ScriptOne1b

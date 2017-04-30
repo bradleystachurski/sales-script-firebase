@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import { List, ListItem } from 'material-ui/List'
 
-class Decisionmaker1a extends Component {
+class ScriptTwo1biiib extends Component {
   render() {
     return (
       <div className="script-container">
@@ -18,27 +18,19 @@ class Decisionmaker1a extends Component {
 
         <hr/>
 
-        <p><strong>You:</strong> Are you no longer advertising at all, or do you have another channel that you are trying?</p>
+        <p><strong>You:</strong> Ask who the right person is, note in CRM and contact that person</p>
 
         <hr/>
 
-        <h3>Answers</h3>
-
         <List>
           <ListItem
-            primaryText="No longer advertising at all"
-            containerElement={<Link to="/decisionmaker/1ai" />}
-            >
-          </ListItem>
-          <ListItem
-            primaryText="Using a different channel"
-            containerElement={<Link to="/decisionmaker/1aii" />}
-            >
-          </ListItem>
+            primaryText="End of Script (Clicking this brings you to main menu)"
+            containerElement={<Link to="/dashboard" />}
+            />
         </List>
       </div>
     )
   }
 }
 
-export default Decisionmaker1a
+export default ScriptTwo1biiib

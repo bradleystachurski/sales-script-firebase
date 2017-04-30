@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-class Gatekeeper1a extends Component {
+class ScriptOne1a extends Component {
   render() {
     return (
       <div className="script-container">
@@ -15,4 +15,4 @@ class Gatekeeper1a extends Component {
   }
 }
 
-export default Gatekeeper1a
+export default ScriptOne1a

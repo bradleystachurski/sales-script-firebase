@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import { List, ListItem } from 'material-ui/List'
 
-class GatekeeperMain extends Component {
+class ScriptOneMain extends Component {
   render() {
     return (
       <div className="script-container">
@@ -15,14 +15,14 @@ class GatekeeperMain extends Component {
             primaryText={
               <div><strong>Gatekeeper:</strong> No I'm sorry he's not in, may I ask who is calling?</div>
             }
-            containerElement={<Link to="/gatekeeper/1a" />}
+            containerElement={<Link to="/script1/1a" />}
             >
           </ListItem>
           <ListItem
             primaryText={
               <div><strong>Gatekeeper:</strong> May I ask what this call is in reference to?</div>
             }
-            containerElement={<Link to="/gatekeeper/1ai" />}
+            containerElement={<Link to="/script1/1ai" />}
             >
           </ListItem>
         </List>
@@ -31,5 +31,5 @@ class GatekeeperMain extends Component {
   }
 }
 
-export default GatekeeperMain
+export default ScriptOneMain
 

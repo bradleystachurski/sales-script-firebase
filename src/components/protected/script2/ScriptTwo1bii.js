@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import { List, ListItem } from 'material-ui/List'
 
-class Decisionmaker1aii extends Component {
+class ScriptTwo1bii extends Component {
   render() {
     return (
       <div className="script-container">
@@ -18,7 +18,7 @@ class Decisionmaker1aii extends Component {
 
         <hr/>
 
-        <p><strong>You:</strong> Oh ok great. I’m sure you would be interested if we could show you ways to improve the results you got from Adwords for free?</p>
+        <p><strong>You:</strong> Are you improving your Adwords account each month yourself, or is a company doing that for you?</p>
 
         <hr/>
 
@@ -27,16 +27,16 @@ class Decisionmaker1aii extends Component {
         <List>
           <ListItem
             primaryText={
-              <span><strong>Owner:</strong> No budget for it</span>
+              <span><strong>Owner:</strong> Improving it myself/ourselves</span>
             }
-            containerElement={<Link to="/decisionmaker/1ai-b" />}
+            containerElement={<Link to="/script2/1biii" />}
             >
           </ListItem>
           <ListItem
             primaryText={
-              <span><strong>Owner:</strong> Will advertise again (later in the year)</span>
+              <span><strong>Owner:</strong> We have a company doing that for us</span>
             }
-            containerElement={<Link to="/decisionmaker/1b" />}
+            containerElement={<Link to="/script2/1biv" />}
             >
           </ListItem>
         </List>
@@ -45,4 +45,4 @@ class Decisionmaker1aii extends Component {
   }
 }
 
-export default Decisionmaker1aii
+export default ScriptTwo1bii

@@ -9,13 +9,14 @@ class Dashboard extends Component {
         <List>
           <h2>Please select a script to follow</h2>
           <ListItem
-            primaryText="Getting Past the Gatekeeper"
-            containerElement={<Link to="/gatekeeper/main" />}
+            primaryText="Script 1: Getting Past Gatekeeper"
+            containerElement={<Link to="/script1/main" />}
             >
           </ListItem>
           <ListItem
-            primaryText="Qualifying Call with Decision Maker"
-            containerElement={<Link to="/decisionmaker/main" />}
+            primaryText="Script 2: Qualifying Call with Decision Maker - Adwords account
+"
+            containerElement={<Link to="/script2/main" />}
             >
           </ListItem>
           <ListItem

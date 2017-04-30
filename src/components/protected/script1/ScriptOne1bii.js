@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import { List, ListItem } from 'material-ui/List'
 
-class Gatekeeper1bii extends Component {
+class ScriptOne1bii extends Component {
   render() {
     return (
       <div className="script-container">
@@ -14,7 +14,7 @@ class Gatekeeper1bii extends Component {
 
         <List>
           <ListItem
-            primaryText="(Clicking this brings you to main menu)"
+            primaryText="End of Script (Clicking this brings you to main menu)"
             containerElement={<Link to="/dashboard" />}
           />
         </List>
@@ -23,4 +23,4 @@ class Gatekeeper1bii extends Component {
   }
 }
 
-export default Gatekeeper1bii
+export default ScriptOne1bii

@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import { List, ListItem } from 'material-ui/List'
 
-class DecisionmakerMain extends Component {
+class ScriptTwo1biiic extends Component {
   render() {
     return (
       <div className="script-container">
@@ -18,23 +18,14 @@ class DecisionmakerMain extends Component {
 
         <hr/>
 
-        <p><strong>You:</strong> This is (your name) from Beeline. Are you familiar with us?</p>
-        <p><strong>Owner:</strong> (pause for answer, most likely “no”)</p>
-        <p><strong>You:</strong> Oh, no problem. The reason for my call is because I've seen your ads in Google Adwords in the past. Are you still using Adwords?</p>
+        <p>Most likely they will not be interested still, you can cold and make a note in CRM. However if they are interested now, click below</p>
 
         <hr/>
 
-        <h3>Answers</h3>
-
         <List>
           <ListItem
-            primaryText="No"
-            containerElement={<Link to="/decisionmaker/1a" />}
-            >
-          </ListItem>
-          <ListItem
-            primaryText="Yes"
-            containerElement={<Link to="/decisionmaker/1b" />}
+            primaryText="Click here if they are interested"
+            containerElement={<Link to="/script2/2a" />}
             >
           </ListItem>
         </List>
@@ -43,4 +34,4 @@ class DecisionmakerMain extends Component {
   }
 }
 
-export default DecisionmakerMain
+export default ScriptTwo1biiic
