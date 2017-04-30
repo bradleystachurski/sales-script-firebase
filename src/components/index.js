@@ -6,6 +6,7 @@ import Dashboard from './protected/Dashboard'
 import { firebaseAuth, adminEmail } from '../config/constants'
 
 import Nav from './layout/Nav'
+
 import GatekeeperMain from './protected/gatekeeper/GatekeeperMain'
 import Gatekeeper1a from './protected/gatekeeper/Gatekeeper1a'
 import Gatekeeper1ai from './protected/gatekeeper/Gatekeeper1ai'
@@ -14,6 +15,12 @@ import Gatekeeper1bi from './protected/gatekeeper/Gatekeeper1bi'
 import Gatekeeper1bii from './protected/gatekeeper/Gatekeeper1bii'
 import Gatekeeper1c from './protected/gatekeeper/Gatekeeper1c'
 import Gatekeeper1ci from './protected/gatekeeper/Gatekeeper1ci'
+
+import DecisionmakerMain from './protected/decisionmaker/DecisionmakerMain'
+import Decisionmaker1a from './protected/decisionmaker/Decisionmaker1a'
+import Decisionmaker1ai from './protected/decisionmaker/Decisionmaker1ai'
+import Decisionmaker1aib from './protected/decisionmaker/Decisionmaker1aib'
+import Decisionmaker1aii from './protected/decisionmaker/Decisionmaker1aii'
 
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import injectTapEventPlugin from 'react-tap-event-plugin'
@@ -101,6 +108,11 @@ export default class App extends Component {
                 <PrivateRoute exact authed={this.state.authed} path="/gatekeeper/1bii" component={Gatekeeper1bii}></PrivateRoute>
                 <PrivateRoute exact authed={this.state.authed} path="/gatekeeper/1c" component={Gatekeeper1c}></PrivateRoute>
                 <PrivateRoute exact authed={this.state.authed} path="/gatekeeper/1ci" component={Gatekeeper1ci}></PrivateRoute>
+                <PrivateRoute exact authed={this.state.authed} path="/decisionmaker/main" component={DecisionmakerMain}></PrivateRoute>
+                <PrivateRoute exact authed={this.state.authed} path="/decisionmaker/1a" component={Decisionmaker1a}></PrivateRoute>
+                <PrivateRoute exact authed={this.state.authed} path="/decisionmaker/1ai" component={Decisionmaker1ai}></PrivateRoute>
+                <PrivateRoute exact authed={this.state.authed} path="/decisionmaker/1aib" component={Decisionmaker1aib}></PrivateRoute>
+                <PrivateRoute exact authed={this.state.authed} path="/decisionmaker/1aii" component={Decisionmaker1aii}></PrivateRoute>
                 <Route render={() => <h3>No Match</h3>} />
               </Switch>
             </div>
