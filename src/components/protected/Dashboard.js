@@ -23,6 +23,11 @@ class Dashboard extends Component {
             containerElement={<Link to="/script3/main" />}
             >
           </ListItem>
+          <ListItem
+            primaryText="Script 4: Follow up Call - Setting up Adwords audit"
+            containerElement={<Link to="/script4/main" />}
+            >
+          </ListItem>
         </List>
       </div>
     );
