@@ -32,7 +32,6 @@ class Nav extends Component {
           open={this.state.open}
           >
           <AppBar title="Scripts App" onLeftIconButtonTouchTap={this.toggleDrawer} />
-          <MenuItem primaryText="Home" containerElement={<Link to="/" />} />
           <MenuItem primaryText="Dashboard" containerElement={<Link to="/dashboard" />} />
           {
             this.props.authed

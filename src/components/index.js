@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { BrowserRouter, Link, Redirect, Route, Switch } from 'react-router-dom'
-import Home from './Home'
 import Login from './Login'
 import Dashboard from './protected/Dashboard'
 import { firebaseAuth, adminEmail } from '../config/constants'
@@ -160,7 +159,7 @@ export default class App extends Component {
             <Nav authed={this.state.authed} />
             <div className="container">
               <Switch>
-                <Route exact path="/" component={Home} />
+                <Redirect exact path="/" to="/login" />
                 <PublicRoute authed={this.state.authed} path="/login" component={Login}></PublicRoute>
                 <PrivateRoute authed={this.state.authed} path="/dashboard" component={Dashboard}></PrivateRoute>
                 <PrivateRoute exact authed={this.state.authed} path="/script1/main" component={ScriptOneMain}></PrivateRoute>
