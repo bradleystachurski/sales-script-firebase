@@ -28,14 +28,14 @@ class ScriptFive3bi extends Component {
             primaryText={
               <span><strong>Owner:</strong> Yes</span>
             }
-            containerElement={<Link to="/script5/3biii" />}
+            containerElement={<Link to="/script5/3bii" />}
             >
           </ListItem>
           <ListItem
             primaryText={
               <span><strong>Owner:</strong> No</span>
             }
-            containerElement={<Link to="/script5/3biv" />}
+            containerElement={<Link to="/script5/3biii" />}
             >
           </ListItem>
         </List>
