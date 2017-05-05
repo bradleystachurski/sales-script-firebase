@@ -18,7 +18,7 @@ class ScriptTwo1aiii extends Component {
 
         <hr/>
 
-        <p><strong>You:</strong> Knowing why you didn’t get good results in Adwords in the past could really help you, because it will tell you what went wrong, and you will be able to use what you learn from us on in your other ad platform. The audit we could do on your old Adwords campaign is 100% free; we’ll simply take a look and send you a detailed report.</p>
+        <p><strong>You:</strong> Knowing why you didn’t get good results in Adwords in the past could really help you, because it will tell you what went wrong, and you will be able to use what you learn from us in your other ad platform. The audit we could do on your old Adwords campaign is 100% free; we’ll simply take a look and send you a detailed report.</p>
 
         <hr/>
 
@@ -36,7 +36,7 @@ class ScriptTwo1aiii extends Component {
             primaryText={
               <span><strong>Owner:</strong> Sure</span>
             }
-            containerElement={<Link to="/script3/3a" />}
+            containerElement={<Link to="/script2/1bi" />}
             >
           </ListItem>
         </List>

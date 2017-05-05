@@ -123,11 +123,13 @@ export default class App extends Component {
     super(props)
     this.state = {
       admin: false,
-      authed: false,
+      // change authed back to false before committing
+      authed: true,
       loading:  true
     }
   }
 
+/*
   componentDidMount () {
     this.removeListener = firebaseAuth().onAuthStateChanged((user) => {
       if (user) {
@@ -146,6 +148,7 @@ export default class App extends Component {
       }
     })
   }
+*/
 
   componentWillUnmount () {
     this.removeListener()

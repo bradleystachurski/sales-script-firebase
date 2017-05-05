@@ -36,7 +36,7 @@ class ScriptTwo1aii extends Component {
             primaryText={
               <span><strong>Owner:</strong> Yes</span>
             }
-            containerElement={<Link to="/script3/3a" />}
+            containerElement={<Link to="/script2/1bi" />}
             >
           </ListItem>
         </List>

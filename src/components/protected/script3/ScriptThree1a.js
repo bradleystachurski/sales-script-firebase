@@ -20,7 +20,6 @@ class ScriptThreeMain extends Component {
 
         <p><strong>You:</strong> If you knew how to get clients from people who are searching for your services on Google right now, I’m sure you would be interested if we could show how to set that up for free?</p>
         <p><strong>Owner:</strong> (pause for answer, most likely “no”)</p>
-        <p><strong>You:</strong> Oh, no problem. The reason for my call is because I've seen that you were advertising in (Valpak/Groupon). Have you ever tried advertising your company online through Google ads?</p>
 
         <hr/>
 
