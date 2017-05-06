@@ -17,7 +17,7 @@ class ScriptFive3biv extends Component {
 
         <hr/>
 
-        <p><strong>You:</strong> You are interested whether Adwords could work for you, and don’t want to set up a test campaign yourself nor have us do it. Why don’t you have a free consultation with our Director Chris? He can answer any of your questions or concerns about a test campaign. Does (day 3-5 days away) work for you for the consultationl?</p>
+        <p><strong>You:</strong> You are interested whether Adwords could work for you, and don’t want to set up a test campaign yourself nor have us do it. Why don’t you have a free consultation with our Director Chris? He can answer any of your questions or concerns about a test campaign. Does (day 3-5 days away) work for you for the consultation?</p>
 
         <hr/>
 

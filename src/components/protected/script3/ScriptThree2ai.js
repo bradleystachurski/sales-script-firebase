@@ -36,7 +36,7 @@ class ScriptThree2ai extends Component {
             primaryText={
               <span><strong>Owner:</strong> Yes</span>
             }
-            containerElement={<Link to="/script3/3a" />}
+            containerElement={<Link to="/script4/3a" />}
             >
           </ListItem>
         </List>

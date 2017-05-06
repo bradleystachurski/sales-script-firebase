@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import { List, ListItem } from 'material-ui/List'
 
-class ScriptFive3bi extends Component {
+class ScriptFive4aib extends Component {
   render() {
     return (
       <div className="script-container">
@@ -17,31 +17,19 @@ class ScriptFive3bi extends Component {
 
         <hr/>
 
-        <p><strong>You:</strong> And you want to set up the campaign yourself?</p>
+        <p><strong>You:</strong> (Cold & record reason in CRM)</p>
 
         <hr/>
 
-        <h3>Answers</h3>
-
         <List>
           <ListItem
-            primaryText={
-              <span><strong>Owner:</strong> Yes</span>
-            }
-            containerElement={<Link to="/script5/3bii" />}
-            >
-          </ListItem>
-          <ListItem
-            primaryText={
-              <span><strong>Owner:</strong> No</span>
-            }
-            containerElement={<Link to="/script5/3biii" />}
-            >
-          </ListItem>
+            primaryText="End of Script (Clicking this brings you to main menu)"
+            containerElement={<Link to="/dashboard" />}
+            />
         </List>
       </div>
     )
   }
 }
 
-export default ScriptFive3bi
+export default ScriptFive4aib
