@@ -27,14 +27,14 @@ class ScriptThree2a extends Component {
         <List>
           <ListItem
             primaryText={
-              <span><strong>Owner:</strong> Yes</span>
+              <span><strong>Owner:</strong> Yes (I was not getting good results)</span>
             }
             containerElement={<Link to="/script3/2ai" />}
             >
           </ListItem>
           <ListItem
             primaryText={
-              <span><strong>Owner:</strong> No</span>
+              <span><strong>Owner:</strong> No (stopped for some other reason)</span>
             }
             containerElement={<Link to="/script3/2aii" />}
             >

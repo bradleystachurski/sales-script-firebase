@@ -17,7 +17,7 @@ class ScriptFive4aiic extends Component {
 
         <hr/>
 
-        <p><strong>You:</strong> Great! Why don’t I set up a free consultation for you with our director Chris, and you can talk about the details. Does (a date 6-8 days away) work for you?</p>
+        <p><strong>You:</strong> Great! Why don’t I set up a free consultation for you with our director Chris, and you can talk about the details. Does (a date 3-5 days away) work for you?</p>
 
         <p>(Schedule consultation for me)</p>
 
